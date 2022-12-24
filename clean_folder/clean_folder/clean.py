@@ -299,6 +299,18 @@ def __main__():
 
     except:
         print('Введіть шлях до папки')
+        path_folder = input(': ')
 
 
-__main__()
+def __extmain__(dyrectory_current):
+    
+    analiz_files(dyrectory_current)
+    create_list_suffix()
+    report_create_folder()
+    unpack_archive()
+    delete_empty_folder(dyrectory_current)
+
+
+        
+
+
